@@ -1,0 +1,100 @@
+/* Bootstrap Variable Overrides */
+:root {
+    --bs-primary: #26A69A !important;
+    --bs-primary-rgb: 38, 166, 154 !important;
+}
+
+/* Primary Button Overrides */
+.btn-primary,
+.btn.btn-primary,
+button.btn-primary {
+    background: linear-gradient(135deg, #26A69A 0%, #4DB6AC 100%) !important;
+    border-color: #26A69A !important;
+    color: white !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn.btn-primary:hover,
+.btn.btn-primary:focus,
+.btn.btn-primary:active {
+    background: linear-gradient(135deg, #00897B 0%, #26A69A 100%) !important;
+    border-color: #00897B !important;
+}
+
+/* Background Primary Override */
+.bg-primary {
+    background: linear-gradient(135deg, #26A69A 0%, #4DB6AC 100%) !important;
+}
+
+/* Text Primary Override */
+.text-primary {
+    color: #26A69A !important;
+}
+
+/* Links Override */
+a {
+    color: #26A69A !important;
+}
+
+a:hover {
+    color: #00897B !important;
+}
+
+/* Navbar Override */
+.navbar.bg-primary {
+    background: linear-gradient(135deg, #26A69A 0%, #4DB6AC 100%) !important;
+}
+
+.navbar.bg-primary .nav-link,
+.navbar.bg-primary .navbar-brand {
+    color: white !important;
+}
+
+.navbar.bg-primary .nav-link:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Icon Colors - Remove general override */
+.fas,
+.far,
+.fab,
+.fa,
+.fa-solid {
+    /* Remove default color to allow specific overrides */
+}
+
+/* Exception for icons in buttons and navbar */
+.btn .fas,
+.btn .far,
+.btn .fab,
+.btn .fa,
+.btn .fa-solid,
+.navbar .fas,
+.navbar .far,
+.navbar .fab,
+.navbar .fa,
+.navbar .fa-solid {
+    color: inherit !important;
+}
+
+/* Exception for icons in primary elements */
+.btn-primary .fas,
+.btn-primary .far,
+.btn-primary .fab,
+.btn-primary .fa,
+.btn-primary .fa-solid,
+.bg-primary .fas,
+.bg-primary .far,
+.bg-primary .fab,
+.bg-primary .fa,
+.bg-primary .fa-solid {
+    color: white !important;
+}
+
+/* Make sure text in primary backgrounds is white */
+.bg-primary,
+.bg-primary * {
+    color: white !important;
+}
